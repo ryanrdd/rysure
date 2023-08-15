@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Rysure Insurance</title>
 </head>
@@ -214,6 +215,36 @@
             </div>
           </div>
     </section>
+
+    <!-- Start Hero Carousel -->
+		<section class="hero is-medium has-carousel">
+			<div id="carousel-demo" class="hero-carousel">
+				<div class="item-1">
+					<img src="sample_logo.png" alt="Rysure">
+          <p>Agent 1</p>
+				</div>
+				<div class="item-2">
+					<img src="sample_logo.png" alt="Rysure">
+          <p>Agent 2</p>
+				</div>
+				<div class="item-3">
+					<img src="sample_logo.png" alt="Rysure">
+          <p>Agent 3</p>
+				</div>
+			</div>
+			<div class="hero-head">Sample</div>
+			<div class="hero-body">Sample</div>
+			<div class="hero-foot">Sample</div>
+		</section>
+		<!-- End Hero Carousel -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 4
+			});
+		</script>
 
     <footer class="footer">
         <div class="content has-text-centered">
